@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_claro"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/verde_acento"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Agregar Producto"
+                android:textColor="@color/texto_blanco"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- Zona foto -->
+        <LinearLayout
+            android:id="@+id/layout_foto"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/fondo_gris"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toca para tomar foto del producto"
+                android:textSize="13sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="o elegir de galería"
+                android:textSize="12sp"
+                android:textColor="@color/azul_medio"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Formulario -->
+        <LinearLayout
+            android:id="@+id/layout_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fondo_tarjeta"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_foto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del producto"
+                android:textSize="11sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Panel Solar 400W Monocristalino"
+                android:background="@color/fondo_gris"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría"
+                android:textSize="11sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/fondo_gris"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca / Fabricante"
+                android:textSize="11sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/et_marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: Jinko Solar"
+                android:background="@color/fondo_gris"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Precio y Potencia en fila -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio (COP)"
+                        android:textSize="11sp"
+                        android:textColor="@color/texto_secundario"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/et_precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="850000"
+                        android:inputType="number"
+                        android:background="@color/fondo_gris"
+                        android:padding="12dp"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Potencia (Watts)"
+                        android:textSize="11sp"
+                        android:textColor="@color/texto_secundario"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/et_potencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="400"
+                        android:inputType="number"
+                        android:background="@color/fondo_gris"
+                        android:padding="12dp"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción técnica"
+                android:textSize="11sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="Describe las características técnicas del producto..."
+                android:background="@color/fondo_gris"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:gravity="top"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+        <!-- Botón publicar -->
+        <Button
+            android:id="@+id/btn_publicar"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="☁  PUBLICAR PRODUCTO"
+            android:backgroundTint="@color/verde_acento"
+            android:textColor="@color/texto_blanco"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_form"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

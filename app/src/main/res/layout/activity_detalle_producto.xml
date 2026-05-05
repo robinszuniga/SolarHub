@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_claro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen del producto -->
+        <ImageView
+            android:id="@+id/img_producto"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/azul_primario"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen del producto"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Botón volver -->
+        <TextView
+            android:id="@+id/btn_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:textColor="@color/texto_blanco"
+            android:textSize="14sp"
+            android:padding="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Nombre producto -->
+        <TextView
+            android:id="@+id/txt_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Panel Solar 400W Monocristalino"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/img_producto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Marca -->
+        <TextView
+            android:id="@+id/txt_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jinko Solar"
+            android:textSize="13sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_nombre"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/txt_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$850.000 COP"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/azul_primario"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_marca"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fondo_gris"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_precio"/>
+
+        <!-- Título especificaciones -->
+        <TextView
+            android:id="@+id/txt_specs_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especificaciones Técnicas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/divider1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Specs -->
+        <LinearLayout
+            android:id="@+id/layout_specs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_specs_titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:background="@color/fondo_gris"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Potencia" android:textSize="13sp"
+                    android:gravity="center_vertical" android:textColor="@color/texto_secundario"/>
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="400W" android:textSize="13sp"
+                    android:gravity="center_vertical|end" android:textStyle="bold"
+                    android:textColor="@color/texto_principal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Tipo" android:textSize="13sp"
+                    android:gravity="center_vertical" android:textColor="@color/texto_secundario"/>
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Monocristalino" android:textSize="13sp"
+                    android:gravity="center_vertical|end" android:textStyle="bold"
+                    android:textColor="@color/texto_principal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:background="@color/fondo_gris"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Garantía" android:textSize="13sp"
+                    android:gravity="center_vertical" android:textColor="@color/texto_secundario"/>
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="25 años" android:textSize="13sp"
+                    android:gravity="center_vertical|end" android:textStyle="bold"
+                    android:textColor="@color/texto_principal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Stock" android:textSize="13sp"
+                    android:gravity="center_vertical" android:textColor="@color/texto_secundario"/>
+                <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="15 unidades" android:textSize="13sp"
+                    android:gravity="center_vertical|end" android:textStyle="bold"
+                    android:textColor="@color/verde_acento"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txt_desc_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_specs"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Panel solar monocristalino de alta eficiencia, ideal para instalaciones residenciales y comerciales. Certificado por RETIE y con garantía de rendimiento de 25 años."
+            android:textSize="13sp"
+            android:textColor="@color/texto_secundario"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_desc_titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón agregar carrito -->
+        <Button
+            android:id="@+id/btn_carrito"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:text="🛒  Agregar al Carrito"
+            android:backgroundTint="@color/azul_primario"
+            android:textColor="@color/texto_blanco"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_descripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

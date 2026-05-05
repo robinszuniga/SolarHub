@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_claro"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header azul superior -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/azul_primario"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☀ SolarHub"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/texto_blanco"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu tienda solar en Colombia"
+                android:textSize="13sp"
+                android:textColor="@color/azul_claro"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Campo correo -->
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:background="@color/fondo_tarjeta"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Campo contraseña -->
+        <EditText
+            android:id="@+id/et_contrasena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_contrasena"
+            android:inputType="textPassword"
+            android:background="@color/fondo_tarjeta"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/et_correo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Olvidaste contraseña -->
+        <TextView
+            android:id="@+id/txt_olvide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_olvidaste"
+            android:textColor="@color/azul_medio"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/et_contrasena"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón ingresar -->
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_ingresar"
+            android:backgroundTint="@color/azul_primario"
+            android:textColor="@color/texto_blanco"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_olvide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón Google -->
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_google"
+            android:backgroundTint="@color/fondo_tarjeta"
+            android:textColor="@color/azul_primario"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_ingresar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Botón huella -->
+        <Button
+            android:id="@+id/btn_huella"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/btn_huella"
+            android:backgroundTint="@color/verde_acento"
+            android:textColor="@color/texto_blanco"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Registro -->
+        <TextView
+            android:id="@+id/txt_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_no_cuenta"
+            android:textColor="@color/azul_medio"
+            android:textSize="13sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_huella"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

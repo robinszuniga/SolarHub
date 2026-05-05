@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SolarHub</string>
+
+    <!-- General -->
+    <string name="btn_ingresar">Iniciar Sesión</string>
+    <string name="btn_registrar">Crear Cuenta</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_editar">Editar</string>
+
+    <!-- Login -->
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="txt_olvidaste">¿Olvidaste tu contraseña?</string>
+    <string name="txt_no_cuenta">¿No tienes cuenta? Regístrate</string>
+    <string name="btn_huella">Usar Huella Dactilar</string>
+    <string name="btn_google">Continuar con Google</string>
+
+    <!-- Catálogo -->
+    <string name="hint_buscar">Buscar productos solares...</string>
+    <string name="txt_agregar_carrito">Agregar al carrito</string>
+    <string name="txt_ver_detalle">Ver detalle</string>
+
+    <!-- Carrito -->
+    <string name="txt_carrito">Mi Carrito</string>
+    <string name="txt_subtotal">Subtotal:</string>
+    <string name="txt_iva">IVA (19%):</string>
+    <string name="txt_total">TOTAL:</string>
+    <string name="btn_pagar_huella">Confirmar con Huella Dactilar</string>
+    <string name="btn_pagar_tarjeta">Pagar con Tarjeta / PSE</string>
+
+    <!-- Vendedor -->
+    <string name="txt_mi_tienda">Mi Tienda</string>
+    <string name="btn_agregar_producto">+ Agregar Producto</string>
+    <string name="hint_nombre_producto">Nombre del producto</string>
+    <string name="hint_precio">Precio (COP)</string>
+    <string name="hint_descripcion">Descripción técnica...</string>
+    <string name="btn_publicar">Publicar Producto</string>
+
+    <!-- Admin -->
+    <string name="txt_dashboard">Panel Administrador</string>
+    <string name="txt_usuarios">Gestión de Usuarios</string>
+    <string name="txt_productos">Gestión de Productos</string>
+    <string name="txt_reportes">Reportes de Ventas</string>
+
+    <!-- Navegación -->
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_catalogo">Catálogo</string>
+    <string name="nav_carrito">Carrito</string>
+    <string name="nav_pedidos">Pedidos</string>
+    <string name="nav_perfil">Perfil</string>
+</resources>

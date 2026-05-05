@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores primarios SolarHub -->
+    <color name="azul_primario">#1A3C6E</color>
+    <color name="azul_medio">#2E6DA4</color>
+    <color name="azul_claro">#5B9BD5</color>
+
+    <!-- Colores acento -->
+    <color name="verde_acento">#1B6B3A</color>
+    <color name="verde_claro">#2E9B56</color>
+    <color name="naranja_acento">#E67E22</color>
+
+    <!-- Fondos -->
+    <color name="fondo_claro">#F0F4F8</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="fondo_gris">#E8EDF2</color>
+
+    <!-- Textos -->
+    <color name="texto_principal">#1E1E1E</color>
+    <color name="texto_secundario">#6B7280</color>
+    <color name="texto_blanco">#FFFFFF</color>
+
+    <!-- Estados -->
+    <color name="error">#C0392B</color>
+    <color name="exito">#27AE60</color>
+    <color name="advertencia">#F39C12</color>
+
+    <!-- Básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
