@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Iconos del menu inferior del comprador -->
+
     <item
         android:id="@+id/nav_inicio"
+        android:icon="@android:drawable/ic_menu_compass"
         android:title="Inicio"/>
 
     <item
         android:id="@+id/nav_catalogo"
+        android:icon="@android:drawable/ic_menu_search"
         android:title="Catálogo"/>
 
     <item
         android:id="@+id/nav_carrito"
+        android:icon="@android:drawable/ic_input_add"
         android:title="Carrito"/>
 
     <item
         android:id="@+id/nav_pedidos"
+        android:icon="@android:drawable/ic_menu_recent_history"
         android:title="Pedidos"/>
 
     <item
         android:id="@+id/nav_perfil"
+        android:icon="@android:drawable/ic_menu_manage"
         android:title="Perfil"/>
 
 </menu>

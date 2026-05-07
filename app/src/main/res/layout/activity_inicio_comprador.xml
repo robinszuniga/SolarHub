@@ -85,6 +85,7 @@
                 android:layout_marginTop="6dp"/>
 
             <Button
+                android:id="@+id/btn_ver_productos"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:text="Ver productos"

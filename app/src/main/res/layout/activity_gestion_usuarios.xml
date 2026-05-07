@@ -92,15 +92,227 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Lista usuarios -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_usuarios"
+    <!-- Lista de usuarios con botones editar y eliminar -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
         app:layout_constraintTop_toBottomOf="@id/scroll_chips"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Usuario 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Juan Pérez"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comprador"
+                        android:textSize="11sp"
+                        android:textColor="@color/azul_primario"
+                        android:background="@color/fondo_gris"
+                        android:padding="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="juan@email.com"
+                    android:textSize="12sp"
+                    android:textColor="@color/texto_secundario"
+                    android:layout_marginTop="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <Button
+                        android:id="@+id/btn_editar_usuario1"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:text="Editar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/azul_primario"
+                        android:textColor="@color/texto_blanco"/>
+                    <Button
+                        android:id="@+id/btn_eliminar_usuario1"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:text="Eliminar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/error"
+                        android:textColor="@color/texto_blanco"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Usuario 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="María Gómez"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vendedor"
+                        android:textSize="11sp"
+                        android:textColor="@color/verde_acento"
+                        android:background="@color/fondo_gris"
+                        android:padding="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="maria@email.com"
+                    android:textSize="12sp"
+                    android:textColor="@color/texto_secundario"
+                    android:layout_marginTop="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <Button
+                        android:id="@+id/btn_editar_usuario2"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:text="Editar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/azul_primario"
+                        android:textColor="@color/texto_blanco"/>
+                    <Button
+                        android:id="@+id/btn_eliminar_usuario2"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:text="Eliminar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/error"
+                        android:textColor="@color/texto_blanco"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Usuario 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fondo_tarjeta"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Carlos Admin"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/texto_principal"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:textSize="11sp"
+                        android:textColor="@color/naranja_acento"
+                        android:background="@color/fondo_gris"
+                        android:padding="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="carlos@solarhub.com"
+                    android:textSize="12sp"
+                    android:textColor="@color/texto_secundario"
+                    android:layout_marginTop="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <Button
+                        android:id="@+id/btn_editar_usuario3"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="4dp"
+                        android:text="Editar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/azul_primario"
+                        android:textColor="@color/texto_blanco"/>
+                    <Button
+                        android:id="@+id/btn_eliminar_usuario3"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:text="Eliminar"
+                        android:textSize="11sp"
+                        android:backgroundTint="@color/error"
+                        android:textColor="@color/texto_blanco"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
